@@ -1,0 +1,88 @@
+@value COLORS: '../../assets/colors.module.css';
+@value COLOR_WHITE, COLOR_BORDER, COLOR_DARK_GRAY, COLOR_DROPDOWN, COLOR_LIGHT_GRAY from COLORS;
+
+.container {
+  background-color: #ffffff;
+  display: flex;
+  min-height: 100vh;
+}
+
+div.action {
+  position: absolute;
+  left: 80px;
+  top: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  color: COLOR_DARK_GRAY;
+}
+.action svg {
+  font-size: 15px;
+  margin-right: 7px;
+  color: COLOR_LIGHT_GRAY;
+  line-height: 10px;
+}
+div.action:hover,
+div.action svg:hover {
+  color: COLOR_DARK_GRAY;
+  cursor: pointer;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.previewContainer {
+  display: flex;
+  flex: 1;
+  border-left: 2px solid COLOR_BORDER;
+}
+:global(.ui-description_container > div:nth-child(1)) {
+  flex: 2;
+  padding: 30px 80px;
+}
+:global(.ui-description_container > div:nth-child(2)) {
+  flex: 7;
+}
+:global(.ui-description_container > div:nth-child(3)) {
+  flex: 1;
+  padding: 30px 80px;
+}
+:global(.ui-footer-details_container) {
+  border-top: 2px solid COLOR_BORDER;
+}
+
+@media only screen and (max-width: 1150px) {
+  div.action {
+    left: 50px;
+  }
+  :global(.ui-description_container > div:nth-child(1)),
+  :global(.ui-description_container > div:nth-child(3)) {
+    padding: 20px 50px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  div.action {
+    left: 50px;
+  }
+  :global(.ui-description_container > div:nth-child(3)) {
+    padding: 20px 50px;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+  .previewContainer {
+    border-left: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  div.action {
+    left: 20px;
+  }
+  :global(.ui-description_container > div:nth-child(1)),
+  :global(.ui-description_container > div:nth-child(3)) {
+    padding: 20px;
+  }
+}

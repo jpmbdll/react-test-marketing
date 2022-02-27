@@ -1,0 +1,55 @@
+@value COLORS: '../../../assets/colors.module.css';
+@value COLOR_BORDER, COLOR_BLUE, COLOR_DARK_GRAY, COLOR_LIGHT_GRAY from COLORS;
+
+/* Overide style from bootstrap */
+:global(.ui-tabs-details_container ul) {
+  padding: 0 4rem;
+}
+:global(.ui-tabs-details_container ul li) {
+  padding: 0 1rem;
+}
+
+:global(.nav-tabs .nav-link.active) {
+  color: COLOR_DARK_GRAY;
+  font-weight: 600;
+  font-size: 13px;
+  border: none;
+  border-bottom: 3px solid COLOR_BLUE !important;
+}
+:global(.nav-tabs .nav-link) {
+  color: COLOR_LIGHT_GRAY;
+  font-size: 13px;
+  border: none !important;
+}
+
+:global(.nav-tabs .nav-link):hover,
+:global(.nav-tabs .nav-link):focus {
+  border: none;
+}
+
+:global(.nav-tabs) {
+  border-bottom: 1px solid COLOR_BORDER;
+}
+
+.tabContent {
+  padding: 1rem 5rem;
+}
+
+@media only screen and (max-width: 1150px) {
+  :global(.ui-tabs-details_container ul) {
+    padding: 0 35px;
+  }
+  .tabContent {
+    padding: 20px 50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  :global(.ui-tabs-details_container ul) {
+    padding: 0 5px;
+  }
+  .tabContent {
+    padding: 20px;
+  }
+}
+

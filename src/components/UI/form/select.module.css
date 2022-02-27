@@ -1,0 +1,24 @@
+@value COLORS: '../../../assets/colors.module.css';
+@value COLOR_BLUE, COLOR_DARK_GRAY, COLOR_LIGHT_GRAY from COLORS;
+
+.select{
+  padding: 10px !important;
+  width: 50% !important;
+}
+
+.label{
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.select:focus{
+    outline: none !important;
+}
+
+.select:focus{
+    border-color: COLOR_DARK_GRAY !important;
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
