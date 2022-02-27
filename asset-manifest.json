@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-test-marketing/static/css/main.6278f85c.css",
-    "main.js": "/react-test-marketing/static/js/main.40b1f9f1.js",
+    "main.js": "/react-test-marketing/static/js/main.c1b02fcd.js",
     "static/js/787.91d5806f.chunk.js": "/react-test-marketing/static/js/787.91d5806f.chunk.js",
     "index.html": "/react-test-marketing/index.html",
     "main.6278f85c.css.map": "/react-test-marketing/static/css/main.6278f85c.css.map",
-    "main.40b1f9f1.js.map": "/react-test-marketing/static/js/main.40b1f9f1.js.map",
+    "main.c1b02fcd.js.map": "/react-test-marketing/static/js/main.c1b02fcd.js.map",
     "787.91d5806f.chunk.js.map": "/react-test-marketing/static/js/787.91d5806f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6278f85c.css",
-    "static/js/main.40b1f9f1.js"
+    "static/js/main.c1b02fcd.js"
   ]
 }
