@@ -6,6 +6,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+Install the dependencies in the local node_modules folder.
+
+In global mode (ie, with -g or --global appended to the command), it installs the current package context (ie, the current working directory) as a global package.
+By default, npm install will install all modules listed as dependencies in package.json.
+
 ### `npm start`
 
 Runs the app in the development mode.\
